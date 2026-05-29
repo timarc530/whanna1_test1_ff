@@ -1,0 +1,9 @@
+{
+  "$schema": "/fade.schema.json",
+  "name": "whanna1_test1_ff",
+  "type": "monogame",
+  "commandDlls": [],
+  "sources": [
+    "main.fbasic"
+  ]
+}

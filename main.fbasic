@@ -1,0 +1,15 @@
+set render size 1280, 720
+set background color rgb(58, 148, 46)
+boxColor = rgb(255, 0, 0)
+spriteId = 1
+sprite(spriteId, render width()/ 2, render height()/ 2, 0)
+size sprite spriteId, 150, 400
+color sprite spriteId, boxColor
+do
+  IF left click()= 1
+    mx = mouse x()
+    my = mouse y()
+    position sprite spriteId, mx, my
+  ENDIF
+  sync ` is this comment syntax
+loop
