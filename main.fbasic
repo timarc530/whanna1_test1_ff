@@ -2,8 +2,10 @@ set render size 1280, 720
 set background color rgb(58, 148, 46)
 boxColor = rgb(255, 0, 0)
 spriteId = 1
+width = 150
+height = 400
 sprite(spriteId, render width()/ 2, render height()/ 2, 0)
-size sprite spriteId, 150, 400
+size sprite spriteId, width, height
 color sprite spriteId, boxColor
 do
   IF left click()= 1
@@ -11,5 +13,13 @@ do
     my = mouse y()
     position sprite spriteId, mx, my
   ENDIF
+
+  IF right click()= 1
+    x = width
+    width = height
+    height = x
+    size sprite spriteId, width, height
+  ENDIF
+
   sync ` is this comment syntax
 loop
